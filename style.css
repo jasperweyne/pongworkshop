@@ -1,0 +1,31 @@
+#field {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: black;
+}
+
+#leftpaddle, #rightpaddle, #ball {
+    position: absolute;
+    width: 30px;
+    background: red;
+}
+
+#leftpaddle, #rightpaddle {
+    height: 100px;
+    top: 250px;
+}
+
+#leftpaddle {
+    left: 40px;
+}
+
+#rightpaddle {
+    right: 40px;
+}
+
+#ball {
+    height: 30px;
+    top: 285px;
+    left: 385px;
+}
