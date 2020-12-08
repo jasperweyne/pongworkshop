@@ -10,10 +10,10 @@ function ElementWrapper(objName) {
         }); 
     }
 
-    this.wrap("left", (o) => o.offsetLeft, (o, v) => o.style.left = v);
-    this.wrap("top", (o) => o.offsetTop, (o, v) => o.style.top = v);
-    this.wrap("width", (o) => o.offsetWidth, (o, v) => o.style.width = v);
-    this.wrap("height", (o) => o.offsetHeight, (o, v) => o.style.height = v);
+    this.wrap("left", (o) => o.offsetLeft, (o, v) => o.style.left = v + "px");
+    this.wrap("top", (o) => o.offsetTop, (o, v) => o.style.top = v + "px");
+    this.wrap("width", (o) => o.offsetWidth, (o, v) => o.style.width = v + "px");
+    this.wrap("height", (o) => o.offsetHeight, (o, v) => o.style.height = v + "px");
 }
 
 // check for collision between two objects using axis-aligned bounding box (AABB)
